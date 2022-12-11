@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* index.html */
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+.everything {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.intro {
+  padding: 0;
+  margin: 0;
+  font-family: "inconsolata", Consolas, Monospace;
+  font-size: 34px;
+  color: #fffe2d;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.intro::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: white;
+  background: #4c4c4c;
+  width: 100%;
+  animation: typing 3s steps(17) infinite;
+}
+
+.AboutMe {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.AboutMe:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.AboutMe:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #4c4c4c;
+}
+
+.AboutMe span {
+  position: relative;
+  z-index: 1;
+}
+
+.AboutMe i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.AboutMe i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #4c4c4c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.AboutMe:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.AboutMe i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #4c4c4c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.AboutMe:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+/* about.html */
+@keyframes typing-i-am {
+  40%,
+  60% {
+    left: calc(100% + 6px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
+.body {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.me {
+  color: #fff;
+  font-size: 2em;
+}
+
+.text {
+  position: relative;
+  color: #ff000f;
+  font-size: 3em;
+  font-weight: 600;
+  margin 0 0 0 0;
+}
+
+.text.first-text {
+  color: #fff;
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4c4c4c;
+  border-left: 4px solid #fff;
+  animation: typing-i-am 4s steps(12) infinite;
+}
+
+.contactme {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.contactme:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.contactme:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #4c4c4c;
+}
+
+.contactme span {
+  position: relative;
+  z-index: 1;
+}
+
+.contactme i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.contactme i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #4c4c4c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.contactme:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.contactme i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #4c4c4c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.contactme:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+/* contact.html */
+.scroll-to-re {
+  color: #fff;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-con {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h2 {
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input , textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+form button {
+  padding: 15px;
+  background: #ff5361;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 20px auto 0;
+  border-radius: 20px;
+}
