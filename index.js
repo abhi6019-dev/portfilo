@@ -1,7 +1,10 @@
-
 const text = document.querySelector(".sec-text");
 
-let textLoad = () => {
+let contact = () => {
+  window.location.replace("contact.html");
+};
+
+function textLoad() {
   setTimeout(() => {
     text.textContent = "Freelancer";
   }, 0);
@@ -9,15 +12,15 @@ let textLoad = () => {
   setTimeout(() => {
     text.textContent = "Python Dev";
   }, 4000);
-  
+
   setTimeout(() => {
     text.textContent = "Js Devloper";
   }, 8000);
-  
+
   setTimeout(() => {
     text.textContent = "Ui/Ux Dev";
   }, 12000);
-};
+}
 
 textLoad();
-setInterval(textLoad , 16000);
+setInterval(contact, 16000);
