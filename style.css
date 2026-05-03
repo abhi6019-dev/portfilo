@@ -1,32 +1,68 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #020617;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
 }
 
 .hero {
-    font-size: 28px;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.projects .card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    transition: 0.3s;
+.hero h2 {
+  font-size: 40px;
 }
 
-.projects .card:hover {
-    transform: scale(1.05);
+.hero p {
+  margin: 20px 0;
 }
 
-h2 {
-    margin-bottom: 20px;
+.btn {
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.project {
+  background: #1e293b;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
 }
