@@ -3,63 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhi | Portfolio</title>
+  <title>Abhi | Quant Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <h1>Abhi</h1>
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <h1>Abhi</h1>
+  <ul>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h2>Aspiring Quant Developer</h2>
-    <p>Building systems in Python, finance, and automation.</p>
-    <a href="#projects" class="btn">View Work</a>
-  </section>
+<section class="hero">
+  <h2 id="typing"></h2>
+  <p>Focused on building analytical systems in finance, physics, and automation.</p>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
+<section id="projects">
+  <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Algorithmic Trading System</h3>
-      <p>Python-based trading engine with risk management and strategy testing.</p>
-      <a href="https://github.com/abhi6019-dev/algorithmic-trading-system-with-risk-management" target="_blank">GitHub</a>
-    </div>
+  <div class="card">
+    <img src="images/trading.png">
+    <h3>Algorithmic Trading System</h3>
+    <p>
+      Developed a Python-based quantitative trading engine featuring
+      strategy backtesting, risk management, and performance analytics.
+      Designed to simulate real-world trading environments.
+    </p>
+    <a href="projects/trading.html">View Details →</a>
+  </div>
 
-    <div class="project">
-      <h3>NoteBot.AI</h3>
-      <p>Extracts and summarizes notes from textbook images using OCR.</p>
-      <a href="https://github.com/abhi6019-dev/NoteBot.Ai" target="_blank">GitHub</a>
-    </div>
+  <div class="card">
+    <img src="images/stem.png">
+    <h3>STEM Simulation & Analysis System</h3>
+    <p>
+      Modular computational system integrating mathematics and physics
+      simulations. Enables visualization and analytical exploration of
+      core scientific concepts.
+    </p>
+    <a href="projects/stem.html">View Details →</a>
+  </div>
 
-    <div class="project">
-      <h3>Projectile Simulator</h3>
-      <p>Physics-based simulation using Python and visualization tools.</p>
-    </div>
+  <div class="card">
+    <img src="images/notebot.png">
+    <h3>NoteBot.AI</h3>
+    <p>
+      OCR-based system that converts textbook images into structured
+      notes using text extraction and preprocessing techniques.
+    </p>
+    <a href="projects/notebot.html">View Details →</a>
+  </div>
 
-  </section>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Python • Data Structures • Problem Solving • Basic Machine Learning</p>
-  </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Data Structures</span>
+    <span>Algorithms</span>
+    <span>NumPy</span>
+    <span>Problem Solving</span>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: kalavaabhinavreddy@gmail.com</p>
+  <p>Instagram: @abhi.zero1</p>
+</section>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
