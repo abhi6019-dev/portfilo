@@ -1,26 +1,9 @@
-const text = document.querySelector(".sec-text");
-
-let contact = () => {
-  window.location.replace("contact.html");
-};
-
-function textLoad() {
-  setTimeout(() => {
-    text.textContent = "Freelancer";
-  }, 0);
-
-  setTimeout(() => {
-    text.textContent = "Python Dev";
-  }, 4000);
-
-  setTimeout(() => {
-    text.textContent = "Js Devloper";
-  }, 8000);
-
-  setTimeout(() => {
-    text.textContent = "Ui/Ux Dev";
-  }, 12000);
-}
-
-textLoad();
-setInterval(contact, 16000);
+// smooth scroll (optional)
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
