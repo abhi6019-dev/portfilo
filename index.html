@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhi | Quantitative Developer</title>
+    <title>Abhi | Quant Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Load Lucide Icons First -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <div class="glow-point"></div>
     <div class="scanline"></div>
     
     <nav>
         <div class="nav-container">
-            <div class="brand">ABHI<span>.DEV</span></div>
+            <div class="brand">ABHI<span>.EXE</span></div>
             <div class="nav-links">
-                <a href="#work">/Projects</a>
+                <a href="#work">Projects</a>
                 <a href="#contact" class="nav-cta">Connect</a>
             </div>
         </div>
@@ -25,72 +25,67 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <div class="badge">SYSTEM READY: V2.0.26</div>
-                <h1>Engineering <span class="gradient-text">Quantitative</span> Solutions.</h1>
-                <p class="hero-subtext">15-year-old developer specializing in algorithmic trading systems and AI educational tools. Optimizing for alpha and mathematical precision.</p>
+                <div class="badge">15Y/O QUANT DEVELOPER</div>
+                <h1>Architecting <span class="gradient-text">Alpha</span> through Code.</h1>
+                <p class="hero-subtext">Specializing in high-frequency logic, algorithmic trading systems, and AI-driven educational software.</p>
                 <div class="hero-actions">
-                    <a href="#work" class="btn-primary">Explore Systems</a>
-                    <a href="https://github.com/abhi6019-dev" class="btn-secondary">GitHub</a>
+                    <a href="#work" class="btn-primary">View Systems</a>
+                    <a href="https://github.com/abhi6019-dev" class="btn-secondary">Source Code</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="terminal-mock">
                     <div class="term-header"><span></span><span></span><span></span></div>
-                    <div id="terminal-body" class="term-body">
-                        <!-- Content will be injected by script.js -->
-                    </div>
+                    <div id="terminal-body" class="term-body"></div>
                 </div>
             </div>
         </section>
 
         <section id="work" class="projects">
-            <h2 class="section-label">// CORE_PROJECTS</h2>
+            <div class="section-header">
+                <h2 class="section-label">SELECTED_WORKS</h2>
+                <div class="line"></div>
+            </div>
             
             <div class="bento-grid">
-                <!-- Project 1 -->
+                <!-- Trading System -->
                 <div class="bento-item main-project">
-                    <div class="project-header">
-                        <span class="category">Quantitative Finance</span>
+                    <div class="glass-overlay"></div>
+                    <div class="project-content">
+                        <span class="category">FINANCE</span>
                         <h3>Algorithmic Trading System</h3>
-                    </div>
-                    <img src="images/trading.png" alt="Trading Analysis" class="project-preview">
-                    <div class="project-details">
-                        <div class="stats-row">
-                            <div class="stat"><span>Sharpe</span><strong>2.45</strong></div>
-                            <div class="stat"><span>CAGR</span><strong>23.9%</strong></div>
-                            <div class="stat"><span>Drawdown</span><strong>-7.9%</strong></div>
+                        <img src="images/trading.png" alt="Trading" class="project-img">
+                        <div class="metrics-grid">
+                            <div class="m-item"><span>SHARPE</span><strong>2.45</strong></div>
+                            <div class="m-item"><span>CAGR</span><strong>23.9%</strong></div>
+                            <div class="m-item"><span>DD</span><strong>-7.9%</strong></div>
                         </div>
-                        <p>Momentum & Mean Reversion engine with automated position sizing and risk management.</p>
-                        <div class="tech-stack">
-                            <span>Python</span><span>Pandas</span><span>NumPy</span>
-                        </div>
+                        <div class="tags"><span>Python</span><span>Backtesting</span><span>Risk Engine</span></div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- NoteBot AI -->
                 <div class="bento-item side-project">
-                    <div class="project-header">
-                        <span class="category">AI / SaaS</span>
-                        <h3>NoteBot AI</h3>
+                    <div class="glass-overlay"></div>
+                    <div class="project-content">
+                        <span class="category">ARTIFICIAL INTELLIGENCE</span>
+                        <h3>NoteBot.Ai</h3>
+                        <img src="images/notebot.png" alt="NoteBot" class="project-img">
+                        <p>OCR-powered study assistant for students.</p>
+                        <div class="tags"><span>Node.js</span><span>Groq</span></div>
+                        <a href="https://abhi6019-dev.github.io/NoteBot.Ai/" target="_blank" class="launch-btn">Launch <i data-lucide="external-link"></i></a>
                     </div>
-                    <img src="images/notebot.png" alt="NoteBot UI" class="project-preview">
-                    <p>Turning screenshots into structured study material with OCR.</p>
-                    <div class="tech-stack">
-                        <span>Node.js</span><span>Groq</span>
-                    </div>
-                    <a href="https://abhi6019-dev.github.io/NoteBot.Ai/" class="external-link" target="_blank">Launch App</a>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- STEM Engine -->
                 <div class="bento-item side-project">
-                    <div class="project-header">
-                        <span class="category">Physics</span>
+                    <div class="glass-overlay"></div>
+                    <div class="project-content">
+                        <span class="category">SIMULATION</span>
                         <h3>STEM Analysis Engine</h3>
-                    </div>
-                    <img src="images/stem.png" alt="STEM Simulation" class="project-preview">
-                    <p>Trajectory analyzer and function plotter for projectile motion.</p>
-                    <div class="tech-stack">
-                        <span>JavaScript</span><span>Canvas</span>
+                        <img src="images/stem.png" alt="STEM" class="project-img">
+                        <p>Mathematical physics engine for trajectory analysis.</p>
+                        <div class="tags"><span>JS</span><span>Physics</span></div>
                     </div>
                 </div>
             </div>
@@ -98,27 +93,17 @@
 
         <section id="contact" class="contact-section">
             <div class="contact-card">
-                <h2>Let's build the future of finance.</h2>
-                <p>Seeking opportunities in Quant Research and Software Engineering.</p>
-                <div class="contact-links">
-                    <a href="mailto:kalavaabhinavreddy@gmail.com" class="contact-btn">Email Me</a>
-                    <a href="https://instagram.com/abhi.zero1" class="contact-btn secondary" target="_blank">Instagram</a>
+                <h2>Ready to integrate?</h2>
+                <p>Currently open for internship opportunities and research collaborations.</p>
+                <div class="contact-btns">
+                    <a href="mailto:kalavaabhinavreddy@gmail.com" class="btn-primary">Email Me</a>
+                    <a href="https://instagram.com/abhi.zero1" class="btn-secondary">Instagram</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Built by Abhi // 2026 // Hyderabad, IN</p>
-    </footer>
-
-    <!-- Scripts at the very end -->
     <script src="script.js"></script>
-    <script>
-        // Fallback icon initializer
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
