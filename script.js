@@ -1,24 +1,24 @@
-// Typing effect
-const text = "Aspiring Quant Developer";
-let i = 0;
+// Initialize Icons
+lucide.createIcons();
 
-function type() {
-  if (i < text.length) {
-    document.getElementById("typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(type, 70);
-  }
-}
-type();
+// Smooth reveal for bento items
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
 
-// Scroll animation
-const cards = document.querySelectorAll(".card");
+document.querySelectorAll('.bento-item').forEach(item => {
+    observer.observe(item);
+});
 
-window.addEventListener("scroll", () => {
-  cards.forEach(card => {
-    const rect = card.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 50) {
-      card.classList.add("show");
-    }
-  });
+// Subtle Mouse tracking for the glow
+document.addEventListener('mousemove', (e) => {
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    
+    document.documentElement.style.setProperty('--mouse-x', x);
+    document.documentElement.style.setProperty('--mouse-y', y);
 });
