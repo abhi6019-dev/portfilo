@@ -1,81 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhi | Quant Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi | Quantitative Developer & AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <div class="scanline"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="brand">ABHI<span>.DEV</span></div>
+            <div class="nav-links">
+                <a href="#work">/Projects</a>
+                <a href="#about">/Stack</a>
+                <a href="#contact" class="nav-cta">Connect</a>
+            </div>
+        </div>
+    </nav>
 
-<nav>
-  <h1>Abhi</h1>
-  <ul>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">SYSTEM READY: V2.0.26</div>
+                <h1>Engineering <span class="gradient-text">Quantitative</span> Solutions.</h1>
+                <p class="hero-subtext">15-year-old developer specializing in algorithmic trading systems and AI-driven educational tools. Currently optimizing for alpha and low-latency execution.</p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn-primary">Explore Systems</a>
+                    <a href="https://github.com/abhi6019-dev" class="btn-secondary">GitHub <i data-lucide="github"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-mock">
+                    <div class="term-header"><span></span><span></span><span></span></div>
+                    <div class="term-body">
+                        <p class="cmd">> Initializing Strategy...</p>
+                        <p class="success">[OK] Momentum Engine Loaded</p>
+                        <p class="success">[OK] Risk Management Active</p>
+                        <p class="cmd">> Backtest Result: 7.16x Return</p>
+                        <p class="cursor">_</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="hero">
-  <h2 id="typing"></h2>
-  <p>Focused on building analytical systems in finance, physics, and automation.</p>
-</section>
+        <section id="work" class="projects">
+            <h2 class="section-label">// CORE_PROJECTS</h2>
+            
+            <!-- Project: Algorithmic Trading -->
+            <div class="bento-grid">
+                <div class="bento-item main-project">
+                    <div class="project-header">
+                        <span class="category">Quantitative Finance</span>
+                        <h3>Algorithmic Trading System</h3>
+                    </div>
+                    <img src="images/trading.png" alt="Trading Analysis" class="project-preview">
+                    <div class="project-details">
+                        <div class="stats-row">
+                            <div class="stat"><span>Sharpe</span><strong>2.45</strong></div>
+                            <div class="stat"><span>CAGR</span><strong>23.9%</strong></div>
+                            <div class="stat"><span>Drawdown</span><strong>-7.9%</strong></div>
+                        </div>
+                        <p>A dual-strategy engine combining Momentum (Moving Average) and Mean Reversion (Z-Score) with automated position sizing.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
 
-<section id="projects">
-  <h2>Projects</h2>
+                <!-- Project: NoteBot AI -->
+                <div class="bento-item side-project">
+                    <div class="project-header">
+                        <span class="category">AI / SaaS</span>
+                        <h3>NoteBot AI</h3>
+                    </div>
+                    <img src="images/notebot.png" alt="NoteBot UI" class="project-preview">
+                    <p>Turning screenshots into structured study material with OCR and LLMs.</p>
+                    <div class="tech-stack">
+                        <span>Node.js</span><span>Groq</span><span>Supabase</span>
+                    </div>
+                    <a href="https://abhi6019-dev.github.io/NoteBot.Ai/" class="external-link">Launch App <i data-lucide="external-link"></i></a>
+                </div>
 
-  <div class="card">
-    <img src="images/trading.png">
-    <h3>Algorithmic Trading System</h3>
-    <p>
-      Developed a Python-based quantitative trading engine featuring
-      strategy backtesting, risk management, and performance analytics.
-      Designed to simulate real-world trading environments.
-    </p>
-    <a href="projects/trading.html">View Details →</a>
-  </div>
+                <!-- Project: STEM Simulation -->
+                <div class="bento-item side-project">
+                    <div class="project-header">
+                        <span class="category">Physics Engine</span>
+                        <h3>STEM Analysis Engine</h3>
+                    </div>
+                    <img src="images/stem.png" alt="STEM Simulation" class="project-preview">
+                    <p>Physics-based trajectory analyzer and function plotter for projectile motion.</p>
+                    <div class="tech-stack">
+                        <span>JavaScript</span><span>Canvas API</span><span>Physics.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="card">
-    <img src="images/stem.png">
-    <h3>STEM Simulation & Analysis System</h3>
-    <p>
-      Modular computational system integrating mathematics and physics
-      simulations. Enables visualization and analytical exploration of
-      core scientific concepts.
-    </p>
-    <a href="projects/stem.html">View Details →</a>
-  </div>
+        <section id="contact" class="contact-section">
+            <div class="contact-card">
+                <h2>Let's build the future of finance.</h2>
+                <p>Seeking internships or collaborative opportunities in Quant Research and Software Engineering.</p>
+                <div class="contact-links">
+                    <a href="mailto:kalavaabhinavreddy@gmail.com" class="contact-btn">Email Me</a>
+                    <a href="https://instagram.com/abhi.zero1" class="contact-btn secondary">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <div class="card">
-    <img src="images/notebot.png">
-    <h3>NoteBot.AI</h3>
-    <p>
-      OCR-based system that converts textbook images into structured
-      notes using text extraction and preprocessing techniques.
-    </p>
-    <a href="projects/notebot.html">View Details →</a>
-  </div>
+    <footer>
+        <p>Built by Abhi // 2026 // Located in Hyderabad, IN</p>
+    </footer>
 
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Python</span>
-    <span>Data Structures</span>
-    <span>Algorithms</span>
-    <span>NumPy</span>
-    <span>Problem Solving</span>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: kalavaabhinavreddy@gmail.com</p>
-  <p>Instagram: @abhi.zero1</p>
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
