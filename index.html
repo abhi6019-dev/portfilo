@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhi | Quantitative Developer & AI Engineer</title>
+    <title>Abhi | Quantitative Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Lucide Icons First -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -16,7 +17,6 @@
             <div class="brand">ABHI<span>.DEV</span></div>
             <div class="nav-links">
                 <a href="#work">/Projects</a>
-                <a href="#about">/Stack</a>
                 <a href="#contact" class="nav-cta">Connect</a>
             </div>
         </div>
@@ -27,21 +27,17 @@
             <div class="hero-content">
                 <div class="badge">SYSTEM READY: V2.0.26</div>
                 <h1>Engineering <span class="gradient-text">Quantitative</span> Solutions.</h1>
-                <p class="hero-subtext">15-year-old developer specializing in algorithmic trading systems and AI-driven educational tools. Currently optimizing for alpha and low-latency execution.</p>
+                <p class="hero-subtext">15-year-old developer specializing in algorithmic trading systems and AI educational tools. Optimizing for alpha and mathematical precision.</p>
                 <div class="hero-actions">
                     <a href="#work" class="btn-primary">Explore Systems</a>
-                    <a href="https://github.com/abhi6019-dev" class="btn-secondary">GitHub <i data-lucide="github"></i></a>
+                    <a href="https://github.com/abhi6019-dev" class="btn-secondary">GitHub</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="terminal-mock">
                     <div class="term-header"><span></span><span></span><span></span></div>
-                    <div class="term-body">
-                        <p class="cmd">> Initializing Strategy...</p>
-                        <p class="success">[OK] Momentum Engine Loaded</p>
-                        <p class="success">[OK] Risk Management Active</p>
-                        <p class="cmd">> Backtest Result: 7.16x Return</p>
-                        <p class="cursor">_</p>
+                    <div id="terminal-body" class="term-body">
+                        <!-- Content will be injected by script.js -->
                     </div>
                 </div>
             </div>
@@ -50,8 +46,8 @@
         <section id="work" class="projects">
             <h2 class="section-label">// CORE_PROJECTS</h2>
             
-            <!-- Project: Algorithmic Trading -->
             <div class="bento-grid">
+                <!-- Project 1 -->
                 <div class="bento-item main-project">
                     <div class="project-header">
                         <span class="category">Quantitative Finance</span>
@@ -64,37 +60,37 @@
                             <div class="stat"><span>CAGR</span><strong>23.9%</strong></div>
                             <div class="stat"><span>Drawdown</span><strong>-7.9%</strong></div>
                         </div>
-                        <p>A dual-strategy engine combining Momentum (Moving Average) and Mean Reversion (Z-Score) with automated position sizing.</p>
+                        <p>Momentum & Mean Reversion engine with automated position sizing and risk management.</p>
                         <div class="tech-stack">
-                            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+                            <span>Python</span><span>Pandas</span><span>NumPy</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project: NoteBot AI -->
+                <!-- Project 2 -->
                 <div class="bento-item side-project">
                     <div class="project-header">
                         <span class="category">AI / SaaS</span>
                         <h3>NoteBot AI</h3>
                     </div>
                     <img src="images/notebot.png" alt="NoteBot UI" class="project-preview">
-                    <p>Turning screenshots into structured study material with OCR and LLMs.</p>
+                    <p>Turning screenshots into structured study material with OCR.</p>
                     <div class="tech-stack">
-                        <span>Node.js</span><span>Groq</span><span>Supabase</span>
+                        <span>Node.js</span><span>Groq</span>
                     </div>
-                    <a href="https://abhi6019-dev.github.io/NoteBot.Ai/" class="external-link">Launch App <i data-lucide="external-link"></i></a>
+                    <a href="https://abhi6019-dev.github.io/NoteBot.Ai/" class="external-link" target="_blank">Launch App</a>
                 </div>
 
-                <!-- Project: STEM Simulation -->
+                <!-- Project 3 -->
                 <div class="bento-item side-project">
                     <div class="project-header">
-                        <span class="category">Physics Engine</span>
+                        <span class="category">Physics</span>
                         <h3>STEM Analysis Engine</h3>
                     </div>
                     <img src="images/stem.png" alt="STEM Simulation" class="project-preview">
-                    <p>Physics-based trajectory analyzer and function plotter for projectile motion.</p>
+                    <p>Trajectory analyzer and function plotter for projectile motion.</p>
                     <div class="tech-stack">
-                        <span>JavaScript</span><span>Canvas API</span><span>Physics.js</span>
+                        <span>JavaScript</span><span>Canvas</span>
                     </div>
                 </div>
             </div>
@@ -103,20 +99,26 @@
         <section id="contact" class="contact-section">
             <div class="contact-card">
                 <h2>Let's build the future of finance.</h2>
-                <p>Seeking internships or collaborative opportunities in Quant Research and Software Engineering.</p>
+                <p>Seeking opportunities in Quant Research and Software Engineering.</p>
                 <div class="contact-links">
                     <a href="mailto:kalavaabhinavreddy@gmail.com" class="contact-btn">Email Me</a>
-                    <a href="https://instagram.com/abhi.zero1" class="contact-btn secondary">Instagram</a>
+                    <a href="https://instagram.com/abhi.zero1" class="contact-btn secondary" target="_blank">Instagram</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Built by Abhi // 2026 // Located in Hyderabad, IN</p>
+        <p>Built by Abhi // 2026 // Hyderabad, IN</p>
     </footer>
 
+    <!-- Scripts at the very end -->
     <script src="script.js"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+        // Fallback icon initializer
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
 </body>
 </html>
